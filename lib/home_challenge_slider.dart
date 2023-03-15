@@ -6,6 +6,7 @@ import 'package:movie_app/widgets/body_sliver.dart';
 import 'package:movie_app/widgets/cover_photo.dart';
 import 'package:movie_app/widgets/cut_rectangle.dart';
 import 'package:movie_app/widgets/data_cut+rectangle.dart';
+import 'package:movie_app/widgets/favorite_circle.dart';
 
 class HomeSliverChallenge extends StatefulWidget {
   const HomeSliverChallenge({Key? key}) : super(key: key);
@@ -78,6 +79,7 @@ class _AppBarNetflix extends SliverPersistentHeaderDelegate {
             bottomSliverBar,
             card,
           ],
+          FavoriteCircle(size: size, percent: percent)
         ],
       ),
     );
